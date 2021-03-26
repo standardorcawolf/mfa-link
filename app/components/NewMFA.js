@@ -28,7 +28,7 @@ export default class NewMFA extends React.Component {
   }
 
   handleKeyInputChange = (event) => {
-    this.setState({confirmKey: event.target.value});
+    this.setState({confirmKey: event.target.value.trim()});
   }
 
   handleTokenInputChange = (event) => {
